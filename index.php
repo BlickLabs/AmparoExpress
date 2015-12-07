@@ -126,7 +126,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputName">N&uacute;mero de targeta:</label>
+                                    <label for="InputName">N&uacute;mero de tarjeta:</label>
                                     <div class="input-group">
                                         <input type="tel" class="form-control" name="target"
                                                id="InputName" placeholder="Ingresa tu Número de Targeta" required>
@@ -134,10 +134,10 @@
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                              <div class="form-group">
-                                    <label for="InputName">CVC:</label>
+                                    <label for="InputName">Mes y Año de la tarjeta:</label>
                                     <div class="input-group">
                                         <input type="tel" class="form-control" name="cvc_target"
-                                               id="InputName" placeholder="Ingresa cvc de tu Número de Targeta" required>
+                                               id="InputName" placeholder="Ingresa cvc de tu Número de Tarjeta" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
