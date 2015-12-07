@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Responsive website template for web design &amp; development agencies</title>
+    <title>Amparo Express</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,159 +70,87 @@
                 </nav><!--//main-nav-->
             </div><!--//container-->
         </header><!--//header-->   
-       
+        <br>
+        <br>
+        <br>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                
+                <form role="form" method="post" action="registro.php">
+								<div class="col-lg-6">
+									<div class="well well-sm">
+										<strong><span class="glyphicon glyphicon-asterisk"></span>Campos
+											Requeridos</strong>
+									</div>
+									<hr>
+									<div class="form-group">
+										<label for="InputName">Email:</label>
+										<div class="input-group">
+                                                                                    <input type="email" class="form-control" name="email"
+												id="InputName" placeholder="Ingresa tu correo electrónico" required>
+											<span class="input-group-addon"><span
+												class="glyphicon glyphicon-asterisk"></span></span>
+										</div>
+									</div>
+									<hr>
+									<div class="form-group">
+										<label for="InputName">Nombre:</label>
+										<div class="input-group">
+                                                                                    <input type="text" class="form-control" name="name"
+												id="InputName" placeholder="Ingressa tu Nombre" required>
+											<span class="input-group-addon"><span
+												class="glyphicon glyphicon-asterisk"></span></span>
+										</div>
+									</div>
+									<hr>
+                                                                        <div class="form-group">
+										<label for="InputName">Apellidos Paterno:</label>
+										<div class="input-group">
+                                                                                    <input type="text" class="form-control" name="Last_name_1"
+												id="InputName" placeholder="Ingresa tu Apellido Paterno" required>
+											<span class="input-group-addon"><span
+												class="glyphicon glyphicon-asterisk"></span></span>
+										</div>
+									</div>
+                                                                        <hr>
+                                                                        <div class="form-group">
+										<label for="InputName">Apellidos Materno:</label>
+										<div class="input-group">
+                                                                                    <input type="text" class="form-control" name="last_name_2"
+												id="InputName" placeholder="Ingresa tu Apellido Paterno" required>
+											<span class="input-group-addon"><span
+												class="glyphicon glyphicon-asterisk"></span></span>
+										</div>
+									</div>
+                                                                        <hr>
+                                                                         <div class="form-group">
+										<label for="InputName">N&uacute;mero Telefoncio:</label>
+										<div class="input-group">
+                                                                                    <input type="tel" class="form-control" name="phone_number"
+												id="InputName" placeholder="Ingresa tu Número Telefonico" required>
+											<span class="input-group-addon"><span
+												class="glyphicon glyphicon-asterisk"></span></span>
+										</div>
+									</div>
+									
+									<input type="submit"
+															name="submit" id="submit" value="Agregar"
+															class="btn btn-info pull-right">
+								</div>
+							</form>
+						
+            </div>
+        </div>
+    </div>           
     
+        <br>
     <!-- ******FOOTER****** --> 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-3 col-sm-4 links-col">
-                        <div class="footer-col-inner">
-                            <h3 class="sub-title">Quick Links</h3>
-                            <ul class="list-unstyled">
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="work.html">Our work</a></li>
-                                <li><a href="contact.html">Contact</a></li>                                
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                            </ul>
-                        </div><!--//footer-col-inner-->
-                    </div><!--//foooter-col-->
-                    <div class="footer-col col-md-6 col-sm-8 blog-col">
-                        <div class="footer-col-inner">
-                            <h3 class="sub-title">Latest From Our Blog</h3>
-                            <div class="item">
-                                <figure class="figure">
-                                    <img class="img-responsive" src="assets/images/blog/blog-tiny-thumb-1.jpg" alt="" />
-                                </figure>
-                                <div class="content">
-                                    <h4 class="post-title"><a href="blog-post.html">DevStudio helps XYZ launch</a></h4>
-                                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales dolor ut ligula faucibus...</p>
-                                    <ul class="meta list-inline">
-                                        <li>18 Feb 2015</li>
-                                        <li>James Lee</li>
-                                    </ul>
-                                </div><!--//content-->
-                            </div>  
-                            <div class="item">
-                                <figure class="figure">
-                                    <img class="img-responsive" src="assets/images/blog/blog-tiny-thumb-2.jpg" alt="" />
-                                </figure>
-                                <div class="content">
-                                    <h4 class="post-title"><a href="blog-post.html">devAid - Free Bootstrap Theme</a></h4>
-                                    <p class="intro">Mauris libero leo, dapibus a congue ut, mollis sed nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus augue nec nulla ultricies...</p>
-                                    <ul class="meta list-inline">
-                                        <li>21 Dec 2014</li>
-                                        <li>Vincent Fowler</li>
-                                    </ul>
-                                </div><!--//content-->
-                            </div>                                                     
-                        </div><!--//footer-col-inner-->
-                    </div><!--//foooter-col--> 
-                    <div class="footer-col col-md-3 col-sm-12 contact-col">
-                        <div class="footer-col-inner">
-                            <h3 class="sub-title">Get In Touch</h3>
-                            <p class="intro"></p>
-                            <div class="row">
-                                <p class="adr clearfix col-md-12 col-sm-4">
-                                    <span class="fs1" aria-hidden="true" data-icon="&#xe01d;"></span>        
-                                    <span class="adr-group">       
-                                        <span class="street-address">56 College Green Road</span><br />
-                                        <span class="city">Bristol</span><br />
-                                        <span class="postal-code">BS1 XR18</span><br />
-                                        <span class="country-name">UK</span>
-                                    </span>
-                                </p>
-                                <p class="tel col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><a href="tel:+08001234567">0800 123 4567</a></p>
-                                <p class="email col-md-12 col-sm-4"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="#">hello@yourdevstudio.com</a></p> 
-                            </div> 
-                        </div><!--//footer-col-inner-->            
-                    </div><!--//foooter-col-->   
-                </div>   
-            </div>        
-        </div><!--//footer-content-->
-        <div class="bottom-bar">
-            <div class="container center">                                   
-                <ul class="social-icons list-inline">
-                    <li><a href="https://twitter.com/3rdwave_themes"><i class="fa fa-twitter"></i></a></li>                        
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.facebook.com/3rdwavethemes"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="last"><a href="#"><i class="fa fa-google-plus"></i></a></li>                     
-                </ul> 
-                <small class="copyright text-center">Copyright @ 2015 <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>                 
-            </div><!--//container-->
-        </div><!--//bottom-bar-->
+      
     </footer><!--//footer-->
     
-    <!-- Contact Modal -->
-    <div class="modal modal-contact" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 id="contactModalLabel" class="modal-title text-center">Start your project today</h4>
-                    <p class="intro text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet tortor consequat nisi scelerisque commodo etiam justo sapien.</p>
-                </div>
-                <div class="modal-body">
-                    <ul class="contact-info list-inline text-center">
-                        <li class="tel"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="+0800123456">0800 123 4567</a></li>
-                        <li class="email"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br /> <a href="#">hello@yourdevstudio.com</a></li>
-                    </ul>
-                    <form id="contact-form" class="contact-form" method="post" action="#">                    
-                        <div class="row text-center">
-                            <div class="contact-form-inner">
-                                <div class="row">                                                           
-                                    
-                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <label class="sr-only" for="cname">Your name</label>
-                                        <input type="text" class="form-control" id="cname" name="name" placeholder="Your name" minlength="2" required>
-                                    </div>                    
-                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <label class="sr-only" for="cemail">Email address</label>
-                                        <input type="email" class="form-control" id="cemail" name="email" placeholder="Your email address" required>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                        <label class="sr-only" for="cmessage">Your message</label>
-                                        <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="12" required></textarea>
-                                    </div>
-                                     <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                        <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Send Message</button>
-                                    </div>                           
-                                </div><!--//row-->
-                            </div>
-                        </div><!--//row-->
-                        <div id="form-messages"></div>
-                    </form><!--//contact-form-->
-                </div><!--//modal-body-->
-            </div><!--//modal-content-->
-        </div><!--//modal-dialog-->
-    </div><!--//modal-->
-    
-    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
-    <div class="config-wrapper">
-        <div class="config-wrapper-inner">
-            <a id="config-trigger" class="config-trigger" href="#"><span class="fs1" aria-hidden="true" data-icon="&#x67;"></span></a>
-            <div id="config-panel" class="config-panel">
-                <h5>Choose Colour</h5>
-                <ul id="color-options" class="list-unstyled list-inline">
-                    <li class="theme-1 active" ><a data-style="assets/css/styles.css" href="#"></a></li>
-                    <li class="theme-2"><a data-style="assets/css/styles-2.css" href="#"></a></li>
-                    <li class="theme-3"><a data-style="assets/css/styles-3.css" href="#"></a></li>
-                    <li class="theme-4"><a data-style="assets/css/styles-4.css" href="#"></a></li>                   
-                    <li class="theme-5"><a data-style="assets/css/styles-5.css" href="#"></a></li>                     
-                    <li class="theme-6"><a data-style="assets/css/styles-6.css" href="#"></a></li>
-                    <li class="theme-7"><a data-style="assets/css/styles-7.css" href="#"></a></li>
-                    <li class="theme-8"><a data-style="assets/css/styles-8.css" href="#"></a></li>                    
-                    <li class="theme-9"><a data-style="assets/css/styles-9.css" href="#"></a></li>
-                    <li class="theme-10"><a data-style="assets/css/styles-10.css" href="#"></a></li>
-                </ul><!--//color-options-->
-                <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
-            </div><!--//configure-panel-->
-        </div><!--//config-wrapper-inner-->
-    </div><!--//config-wrapper-->
+   
  
     <!-- Main Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
