@@ -51,20 +51,12 @@
                         </div><!--//navbar-header-->
                         <div id="navbar-collapse" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active nav-item"><a href="index.html">Home</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="work.html">Work <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="work.html">Our Work</a></li>
-                                        <li><a href="case-study-1.html">Single Case Study 1</a></li>
-                                        <li><a href="case-study-2.html">Single Case Study 2</a></li>
-                                        <li><a href="blog-post.html">Single Blog Post</a></li> 
-                                        <li><a href="404.html">404 Page</a></li>            
-                                    </ul>
-                                </li><!--//dropdown--> 
-                                <li class="nav-item"><a href="about.html">About</a></li>                                              
-                                <li class="nav-item"><a href="blog.html">Blog</a></li>
-                                <li class="nav-item last"><a href="contact.html">Contact</a></li>
+                                <li class="active nav-item"><a href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a href="about.html">Preguntas Frecuentes</a></li>                                              
+                                <li class="nav-item"><a href="blog.html">Quienes Somos</a></li>
+                                <li class="nav-item "><a href="contact.html">Contacto</a></li>
+                                <li class="nav-item "><a href="">Terminos y Condiciones</a></li>
+                                <li class="nav-item last"><a href="">Aviso de Privacidad</a></li>
                             </ul><!--//nav-->
                         </div><!--//navabr-collapse-->
                     </nav><!--//main-nav-->
@@ -125,7 +117,7 @@
                                 </div>
                                 <hr>
                                 <div class="form-group">
-                                    <label for="InputName">N&uacute;mero Telefoncio:</label>
+                                    <label for="InputName">N&uacute;mero Telefonico:</label>
                                     <div class="input-group">
                                         <input type="tel" class="form-control" name="phone_number"
                                                id="InputName" placeholder="Ingresa tu Número Telefonico" required>
@@ -133,7 +125,23 @@
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
-
+                                <div class="form-group">
+                                    <label for="InputName">N&uacute;mero de targeta:</label>
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" name="target"
+                                               id="InputName" placeholder="Ingresa tu Número de Targeta" required>
+                                        <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                             <div class="form-group">
+                                    <label for="InputName">CVC:</label>
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" name="cvc_target"
+                                               id="InputName" placeholder="Ingresa cvc de tu Número de Targeta" required>
+                                        <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
                                 <input type="submit"
                                        name="submit" id="submit" value="Agregar"
                                        class="btn btn-info pull-right">
