@@ -70,7 +70,7 @@
                     <div class="row">
 
                         <form role="form" method="post" action="registro.php">
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
                                 <div class="well well-sm">
                                     <strong><span class="glyphicon glyphicon-asterisk"></span>Campos
                                         Requeridos</strong>
@@ -89,8 +89,8 @@
                                 <div class="form-group">
                                     <label for="InputName">Nombre:</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="name"
-                                               id="InputName" placeholder="Ingressa tu Nombre" required>
+                                         <input type="text" class="form-control" name="name"
+                                               id="InputName" placeholder="Ingresa tu Nombre" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
@@ -125,6 +125,7 @@
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
+                                <hr>
                                 <div class="form-group">
                                     <label for="InputName">N&uacute;mero de tarjeta:</label>
                                     <div class="input-group">
@@ -133,17 +134,19 @@
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
+                                </div>
+                                <hr>
                              <div class="form-group">
-                                    <label for="InputName">Mes y Año de la tarjeta:</label>
+                                    <label for="InputName">Vencimiento:</label>
                                     <div class="input-group">
                                         <input type="tel" class="form-control" name="cvc_target"
-                                               id="InputName" placeholder="Ingresa cvc de tu Número de Tarjeta" required>
+                                               id="InputName" placeholder="Vencimiento MM/AA" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
                                 <input type="submit"
-                                       name="submit" id="submit" value="Agregar"
+                                       name="submit" id="submit" value="Registarme"
                                        class="btn btn-info pull-right">
                             </div>
                         </form>
