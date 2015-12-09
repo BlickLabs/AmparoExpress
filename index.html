@@ -79,8 +79,8 @@
                                 <div class="form-group">
                                     <label for="InputName">Email:</label>
                                     <div class="input-group">
-                                        <input type="email" class="form-control" name="email"
-                                               id="InputName" placeholder="Ingresa tu correo electrónico" required>
+                                        <input pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" class="form-control" name="email"
+                                               id="InputName" title="ejemplo name@gmail.com" required placeholder="nombre@gmail.com">
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
@@ -89,8 +89,8 @@
                                 <div class="form-group">
                                     <label for="InputName">Nombre:</label>
                                     <div class="input-group">
-                                         <input type="text" class="form-control" name="name"
-                                               id="InputName" placeholder="Ingresa tu Nombre" required>
+                                        <input type="text" class="form-control" name="name" title="Solo se permiten letras" pattern="[a-zA-Z]"
+                                                id="InputName" placeholder="Ingresa tu Nombre" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
@@ -99,7 +99,7 @@
                                 <div class="form-group">
                                     <label for="InputName">Apellidos Paterno:</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="last_name_1"
+                                        <input type="text" class="form-control" name="last_name_1" title="Solo se permiten letras" pattern="[a-zA-Z]"
                                                id="InputName" placeholder="Ingresa tu Apellido Paterno" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
@@ -109,7 +109,7 @@
                                 <div class="form-group">
                                     <label for="InputName">Apellidos Materno:</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="last_name_2"
+                                        <input type="text" class="form-control" name="last_name_2" title="Solo se permiten letras" pattern="[a-zA-Z]"
                                                id="InputName" placeholder="Ingresa tu Apellido Paterno" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
@@ -119,7 +119,7 @@
                                 <div class="form-group">
                                     <label for="InputName">N&uacute;mero Telefonico:</label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" name="phone_number"
+                                        <input type="tel" class="form-control" name="phone_number" pattern="[0-9]{10}"
                                                id="InputName" placeholder="Ingresa tu Número Telefonico" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
@@ -129,8 +129,8 @@
                                 <div class="form-group">
                                     <label for="InputName">N&uacute;mero de tarjeta:</label>
                                     <div class="input-group">
-                                        <input type="tel" class="form-control" name="target"
-                                               id="InputName" placeholder="Ingresa tu Número de Targeta" required>
+                                        <input title="Se necesitan 16 números" type="tel" class="form-control" name="target"  pattern="[0-9]{16}"
+                                               id="InputName" placeholder="Formato válido, 16 Dígitos" required>
                                         <span class="input-group-addon"><span
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
