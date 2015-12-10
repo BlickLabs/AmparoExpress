@@ -71,104 +71,108 @@
             <div class="container text-center">
                 <h2 class="Medium" style="font-size: 25px;">LLENA LOS SIGUIENTES CAMPOS:</h2>
             </div>    
-            <div class="row benefits text-center">
-                <div class="item col-md-3 col-sm-5 col-xs-12">
-
-                </div><!--//item-->
-                <div class="item col-md-3 col-sm-5 col-xs-12 sm-break">
+            <div class="row benefits">
+                
+                
+                <div class="item col-md-8 col-sm-8 col-xs-12 ">
+                    <form role="form" method="post" action='model/registro.php'>
                     <div class="item-inner">
-                        <div class="form-group">
-                            <label for="InputName">Nombre y apellido de la persona que se va a amparar</label>
+                        <div >
+                            <label for="InputName" class="Light" style="font-size: large">Nombre y apellido de la persona que se va a amparar</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="InputName"
+                                <input type="text" class="form-control" name="Nombre"
                                        id="InputName" required>
                                 
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="InputName">Correo electrónico para recibir el comprobantte</label>
+                            <label for="InputName" class="Light">Correo electrónico para recibir el comprobante</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="InputName"
+                                <input type="email" class="form-control" name="correo"
                                        id="InputName" required>
                                 
                             </div>
                         </div>
                         <hr>
                         <p>Datos de la targeta con la que se va a realizar el pago</p>
+                        <img src="img/Mastercard.png" style="width: 50px;height: 30px;">
+                        <img src="img/visa.png" style="width: 50px;height: 30px;">
+                        <br>
+                        <br>
                          <div class="form-group">
-                            <label for="InputName">Número de tarjeta</label>
+                             <label for="InputName" class="Light">Número de tarjeta</label>
                             <div class="input-group">
                                 <input type="text" class="form-control" name="InputName"
-                                       id="InputName" required>
+                                       id="InputName" placeholder="xxxx xxxx xxxx xxxx"required required pattern="[0-9]{16}" title="Formato solicitado 16 dígitos">
                                 
                             </div>
                         </div>
                          <div class="form-group">
-                            <label for="InputName">Fecha de vencimiento</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="InputName"
-                                       id="InputName" required>
+                             <label for="InputName" class="Light">Fecha de vencimiento</label>
+                            <div >
+                                <table>
+                                    <tr><TD><input type="text" class="form-control" name="InputName"
+                                       id="InputName" placeholder="Mes"required required pattern="[0-9]{2}" title="Formato,2 dígitos">
+                                        <TD><TD><TD><input type="text" class="form-control" name="InputName"
+                                                   id="InputName" placeholder="Año"required required pattern="[0-9]{2}" title="Formaito válido,2 dígitos"><TD><TD><TD><TD><TD><TD></tr>
+                                </table>
                                 
                             </div>
+                            
                         </div>
+                        
                          <div class="form-group">
-                            <label for="InputName">Código de seguridad</label>
-                            <div class="input-group">
+                             <label for="InputName" class="Light">Código de seguridad</label>
+                            <div >
                                 <input type="text" class="form-control" name="InputName"
-                                       id="InputName" required>
+                                       id="InputName" required pattern="[0-9]{4}" title="el código contiene 4 dígitos">
                                 
                             </div>
                         </div>
-                        <input type="checkbox" name="option1" value="Milk"> He leído y estoy de acuerdo con los Términos 
+                        
+                        <input type="checkbox" name="option1" value="acept" required=""> He leído y estoy de acuerdo con los Términos 
                         y condiciones y aviso de privacidad.<br>
                         
-                        <button class="btn btn-cta btn-cta-primary Medium" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static" style="font-size:  large">pagar</button>
-                    </div><!--l//item-inner-->                    
+                        <br>
+                        <center>
+                        <input type="submit"  class="btn btn-cta btn-cta-primary Medium"  name="submit" id="submit" value="Pagar"															>
+                        </center>
+                        </div><!--l//item-inner-->    
+                    </form>
                 </div>
-               
-
-                                        <br>
-                                        
-
-                                        </div><!--//container-->
-                                        </section><!--//who-->
-
+                
+               </div>
+               </section>
 
 
                                         <!-- ******FOOTER****** --> 
-                                        <footer class="footer">
-
-                                            <div class="bottom-bar">
-                                                <div class="container center">        
-                                                    <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
-                                                    <br>
-                                                    <h4 class="Light" style="color: white;font-size: large">Síguenos en:</h4>
-                                                    <center>
-                                                        <TABLE >
-
-                                                            <TR> <TD><img src="img/facebook.png" style="width: 50px;height: 50px"/><TD><img src="img/twitter.png" style="width: 50px;height: 50px"/></TR>
-                                                        </TABLE>
-                                                    </center>    
-
-                                                </div><!--//container-->
-                                            </div><!--//bottom-bar-->
-                                        </footer><!--//footer-->
-
-
+    <footer class="footer">
+        
+        <div class="bottom-bar">
+            <div class="container center">        
+                <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
+                <br>
+                <h4 class="Light" style="color: white;font-size: large">Síguenos en:</h4>
+                <center>
+                <TABLE >
+       
+                    <TR> <TD><img src="img/facebook.png" style="width: 50px;height: 50px"/><TD><TD><TD><img src="img/twitter.png" style="width: 50px;height: 50px"/></TR>
+      </TABLE>
+               </center>    
+                
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
+    </footer><!--//footer-->
+    
+   
+    
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <div class="config-wrapper">
+        
+    </div><!--//config-wrapper-->
 
                                         <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
-                                        <div class="config-wrapper">
-                                            <div class="config-wrapper-inner">
-                                                <a id="config-trigger" class="config-trigger" href="#"><span class="fs1" aria-hidden="true" data-icon="&#x67;"></span></a>
-                                                <div id="config-panel" class="config-panel">
-                                                    <h5>Choose Colour</h5>
-                                                    <ul id="color-options" class="list-unstyled list-inline">
-
-                                                    </ul><!--//color-options-->
-                                                    <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
-                                                </div><!--//configure-panel-->
-                                            </div><!--//config-wrapper-inner-->
-                                        </div><!--//config-wrapper-->
+                                       
 
                                         <!-- Main Javascript -->          
                                         <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>

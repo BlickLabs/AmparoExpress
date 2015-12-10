@@ -84,6 +84,7 @@ a.btn-cta-secondary:hover,
   -moz-box-shadow: none;
   box-shadow: none;
   height: 40px;
+  width: 80px;
   border-color: #eeeeee;
 }
 .form-control::-webkit-input-placeholder {
@@ -1633,7 +1634,7 @@ body.no-header-wrapper {
   max-width: 168px;
 }
 .blog-sidebar .search-blog-form .form-control {
-  height: 38px;
+  height: 40px;
 }
 .blog-sidebar .search-blog-form .btn {
   padding: 8px 12px;
