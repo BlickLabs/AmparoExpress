@@ -210,46 +210,7 @@ body.no-header-wrapper {
 .header-wrapper-home {
   min-height: 450px;
 }
-.header-wrapper-work {
-  background: #65758e url('../images/background/heading-background-1.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
-}
-.header-wrapper-case-study {
-  background: #65758e url('../images/background/case-study-background-1.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
-}
-.header-wrapper-about {
-  background: #65758e url('../images/background/heading-background-2.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
-}
-.header-wrapper-blog-home {
-  background: #65758e url('../images/background/heading-background-3.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
-}
-.header-wrapper-contact {
-  background: #65758e url('../images/background/heading-background-4.jpg') no-repeat 50% top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
-}
+
 .header {
   color: #fff;
   width: 100%;
@@ -305,7 +266,7 @@ body.no-header-wrapper {
   outline: none;
 }
 .header .main-nav .navbar-toggle .icon-bar {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #fff;
   height: 3px;
 }
 .header .main-nav .navbar-toggle:hover .icon-bar {
@@ -2263,7 +2224,7 @@ body.no-header-wrapper {
     padding-top: 50px;
   }
   .header-wrapper-home {
-    min-height: 560px;
+    min-height: 450px;
   }
   .header .main-nav .nav .nav-item {
     margin-right: 0;
@@ -2301,7 +2262,7 @@ body.no-header-wrapper {
     padding-top: 100px;
   }
   .header-wrapper-home {
-    min-height: 460px;
+    min-height:400px;
   }
   .promo .title .middle {
     font-size: 38px;
@@ -2409,7 +2370,7 @@ body.no-header-wrapper {
     display: block;
   }
   .header-wrapper-home {
-    height: 650px;
+    height: 500px;
   }
   .main-nav {
     float: right !important;
