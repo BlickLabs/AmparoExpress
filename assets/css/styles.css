@@ -60,7 +60,7 @@ a.btn-cta-primary,
 }
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
-  background: #ec9c29;
+  background: #198892;
   border: none;
   color: #fff;
 }
@@ -163,7 +163,7 @@ select {
   width: 100%;
   top: 0;
   left: 0;
-  height: 450px;
+  height: 650px;
   background: #595959;
 }
 .bg-slider-wrapper .flexslider {
@@ -183,7 +183,7 @@ select {
 }
 .bg-slider-wrapper .flexslider .slide {
   display: block;
-  height: 450px;
+  height: 600px;
 }
 .bg-slider-wrapper .flexslider {
   background: #65758e url('../images/background/fondo.jpg') no-repeat 50% top;
@@ -209,7 +209,7 @@ body.no-header-wrapper {
   padding-top: 80px;
 }
 .header-wrapper-home {
-  min-height: 450px;
+  min-height: 600px;
 }
 
 .header {
@@ -423,7 +423,7 @@ body.no-header-wrapper {
   font-family: 'Merriweather Sans', arial, sans-serif;
   font-style: italic;
   text-transform: lowercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 .home-promo .btn {
   font-size: 20px;
@@ -1162,7 +1162,7 @@ body.no-header-wrapper {
   color: #65758e;
 }
 .services .btn-cta {
-  font-size: 16px;
+  font-size: 35px;
   margin-top: 30px;
 }
 /* ======= About Us ======= */
@@ -2225,7 +2225,7 @@ body.no-header-wrapper {
     padding-top: 50px;
   }
   .header-wrapper-home {
-    min-height: 450px;
+    min-height: 500px;
   }
   .header .main-nav .nav .nav-item {
     margin-right: 0;
@@ -2371,7 +2371,7 @@ body.no-header-wrapper {
     display: block;
   }
   .header-wrapper-home {
-    height: 500px;
+    height: 650px;
   }
   .main-nav {
     float: right !important;

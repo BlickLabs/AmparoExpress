@@ -69,7 +69,7 @@
         <!-- ******Why Section****** -->
         <section id="who" class="who section">
             <div class="container text-center">
-                <h2 class="Medium" style="font-size: 25px;">LLENA LOS SIGUIENTES CAMPOS:</h2>
+                <h2 class="Medium" style="font-size: 18px;">LLENA LOS SIGUIENTES CAMPOS:</h2>
             </div>    
             <div class="row benefits">
                 
@@ -80,7 +80,7 @@
                         <div >
                             <label for="InputName" class="Light" style="font-size: large">Nombre y apellido de la persona que se va a amparar</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="Nombre"
+                                <input type="text" class="form-control" name="Nombre" style="width: 405px"
                                        id="InputName" required>
                                 
                             </div>
@@ -88,21 +88,22 @@
                         <div class="form-group">
                             <label for="InputName" class="Light">Correo electrónico para recibir el comprobante</label>
                             <div class="input-group">
-                                <input type="email" class="form-control" name="correo"
+                                <input type="email" class="form-control" name="correo" style="width: 405px"
                                        id="InputName" required>
                                 
                             </div>
                         </div>
                         <hr>
-                        <p>Datos de la tarjeta con la que se va a realizar el pago</p>
+                        <p class="Light">Datos de la tarjeta con la que se va a realizar el pago de $2,200 MXM</p>
                         <img src="img/Mastercard.png" style="width: 50px;height: 30px;">
                         <img src="img/visa.png" style="width: 50px;height: 30px;">
+                        <img src="img/American-Express.png" style="width: 50px;height: 30px;">
                         <br>
                         <br>
                          <div class="form-group">
                              <label for="InputName" class="Light">Número de tarjeta</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="InputName"
+                                <input type="text" class="form-control" name="InputName"  style="width: 405px"
                                        id="InputName" placeholder="xxxx xxxx xxxx xxxx"required required pattern="[0-9]{16}" title="Formato solicitado 16 dígitos">
                                 
                             </div>
@@ -111,9 +112,9 @@
                              <label for="InputName" class="Light">Fecha de vencimiento</label>
                             <div >
                                 <table>
-                                    <tr><TD><input type="text" class="form-control" name="InputName"
+                                    <tr><TD><input type="text" class="form-control" name="InputName" style="width: 200px"
                                        id="InputName" placeholder="Mes"required required pattern="[0-9]{2}" title="Formato,2 dígitos">
-                                        <TD><TD><TD><input type="text" class="form-control" name="InputName"
+                                        <TD><TD><TD><input type="text" class="form-control" name="InputName"  style="width: 200px"
                                                    id="InputName" placeholder="Año"required required pattern="[0-9]{2}" title="Formaito válido,2 dígitos"><TD><TD><TD><TD><TD><TD></tr>
                                 </table>
                                 
@@ -124,19 +125,20 @@
                          <div class="form-group">
                              <label for="InputName" class="Light">Código de seguridad</label>
                             <div >
-                                <input type="text" class="form-control" name="InputName"
+                                <input type="text" class="form-control glyphicon glyphicon-lock" name="InputName" style="width:90px"  
                                        id="InputName" required pattern="[0-9]{4}" title="el código contiene 4 dígitos">
-                                
+                               
                             </div>
                         </div>
                         
-                        <input type="checkbox" name="option1" value="acept" required=""> He leído y estoy de acuerdo con los Términos 
-                        y condiciones y aviso de privacidad.<br>
+                        <input type="checkbox" name="option1" value="acept" required="" class="Light"> He leído y estoy de acuerdo con los <u style="color: #198892">Términos 
+                        y Condiciones</u> y <u style="color: #198892" >Aviso de Privacidad</u>.<br>
                         
                         <br>
                         <center>
-                        <input type="submit"  class="btn btn-cta btn-cta-primary Medium"  name="submit" id="submit" value="Pagar"															>
+                        <input type="submit"  class="btn btn-cta btn-cta-primary Medium"  name="submit" id="submit" value="Pagar">
                         </center>
+                        
                         </div><!--l//item-inner-->    
                     </form>
                 </div>
