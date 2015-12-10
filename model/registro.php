@@ -1,7 +1,7 @@
 <?php error_reporting(E_ALL);
 include("../model/conexion.php");
 $name = $_POST['Nombre']; 
-$email = $_POST['correo'];
+$email = $_POST['email'];
 
 # Include the Autoloader (see "Libraries" for install instructions)
 //require '../vendor/autoload.php';
@@ -33,9 +33,8 @@ VALUES ('$email','$name')");
 
 mysqli_close($con);
 
-echo '<script language="javascript">';
-echo 'alert("Registro Exitoso!!")';
-echo '</script>';
-exit;
-
+header('Location:../index.html?status=success');
+if( $_GET['status'] == 'success'):
+    echo 'feedback message goes here';
+endif;
 ?>

@@ -91,7 +91,7 @@
                                     <div class="form-group">
                                         <label for="InputName" class="Light" style="font-size: x-large">Correo eletrónico para recibir el comprobante</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="email"
+                                            <input type="email" class="form-control" name="email"
                                                    id="InputName"required>
                                             <span class="input-group-addon"><span
                                                     class="glyphicon glyphicon-asterisk"></span></span>
@@ -108,7 +108,7 @@
                                     <div class="form-group">
                                         <label for="InputName" class="Light" style="font-size: x-large">Número de tarjeta</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="InputName"
+                                            <input type="text" class="form-control" name="InputName" pattern="[0-9]{16}" title="El número de tarjeta son 16 dígitos "
                                                    id="InputName"required placeholder="xxxx xxxx xxxx xxxx">
                                             <span class="input-group-addon"><span
                                                     class="glyphicon glyphicon-asterisk"></span></span>
@@ -119,13 +119,13 @@
                                     <div class="form-group">
                                         <label for="InputName" class="Light" style="font-size: x-large" >Fecha de vencimiento</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="InputName"
+                                            <input type="text" class="form-control" name="InputName" pattern="[0-9]{2}" title="Formato válido 2 dígitos"
                                                    id="InputName"required placeholder="Mes">
                                             <span class="input-group-addon"><span
                                                     class="glyphicon glyphicon-asterisk"></span></span>
 
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="InputName"
+                                                <input type="text" class="form-control" name="InputName" pattern="[0-9]{2}" title="Formato válido 2 dígitos"
                                                        id="InputName"required placeholder="Año" >
                                                 <span class="input-group-addon"><span
                                                         class="glyphicon glyphicon-asterisk"></span></span>
@@ -135,19 +135,20 @@
                                     <div class="form-group">
                                         <label for="InputName" class="Light" style="font-size: x-large" >Código de seguridad </label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="InputName"
+                                            <input type="text" class="form-control" name="InputName" pattern="[0-9]{4}" title="El código de seguridad contiene 4 dígitos"
                                                    id="InputName"required style="width: 120px;">
                                             <span class="input-group-addon"><span
                                                     class="glyphicon glyphicon-asterisk"></span></span>
                                         </div>
                                     </div>
 
-                                    <input type="checkbox" name="option1" value="acept" required="" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <u style="color: #198892;font-size: medium">Términos 
+                                    <input type="checkbox" required   name="option1" value="acept" required="" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <u style="color: #198892;font-size: medium">Términos 
                                         y Condiciones</u> y <u style="color: #198892;font-size: medium" >Aviso de Privacidad</u>.<br>
 
                                     <br>
                                     <center>
                                         <input type="submit"  class="btn btn-cta btn-cta-primary Medium"  name="submit" id="submit" style="font-size: x-large" value="Pagar">
+                                        
                                     </center>
                                 </div><!--l//item-inner-->    
                             </div>
