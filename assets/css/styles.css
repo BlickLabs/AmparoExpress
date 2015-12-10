@@ -54,7 +54,7 @@ a.btn-cta,
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #eea740;
+  background: #198892;
   border: none;
   color: #fff;
 }
@@ -162,7 +162,7 @@ select {
   width: 100%;
   top: 0;
   left: 0;
-  height: 650px;
+  height: 450px;
   background: #595959;
 }
 .bg-slider-wrapper .flexslider {
@@ -182,7 +182,7 @@ select {
 }
 .bg-slider-wrapper .flexslider .slide {
   display: block;
-  height: 650px;
+  height: 450px;
 }
 .bg-slider-wrapper .flexslider {
   background: #65758e url('../images/background/fondo.jpg') no-repeat 50% top;
@@ -208,7 +208,7 @@ body.no-header-wrapper {
   padding-top: 80px;
 }
 .header-wrapper-home {
-  min-height: 650px;
+  min-height: 450px;
 }
 .header-wrapper-work {
   background: #65758e url('../images/background/heading-background-1.jpg') no-repeat 50% top;

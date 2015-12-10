@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/12/2015, 09:58:15 PM
+    Author     : tono
+*/
+
+  @font-face {
+  font-family: "Bold";
+  src: url("../font-face/TodaySHOP-Bold.otf");
+  }
+  
+    .Bold {
+  font-family: Bold;
+  }
+  
+    @font-face {
+  font-family: "Light";
+  src: url("../font-face/TodaySHOP-Light.otf");
+  }
+    
+    .Light {
+  font-family: Ligth;
+  }
+  
+    @font-face {
+  font-family: "Medium";
+  src: url("../font-face/TodaySHOP-Medium.otf");
+  }
+  
+    .Medium {
+  font-family: Medium;
+  }
+  
+    @font-face {
+  font-family: "MediumItalic";
+  src: url("../font-face/TodaySHOP-MediumItalic.otf");
+  }
+  
+    .MediumItalic {
+  font-family: MediumItalic;
+  }
+  
