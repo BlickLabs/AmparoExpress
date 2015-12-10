@@ -67,96 +67,96 @@
         </div><!--//header-wrapper-->
 
         <!-- ******Why Section****** -->
-        <section id="who" class="who section">
+        <section id="who" class="who2 section">
             <div class="container text-center">
                 <h2 class="Medium" style="font-size: 30px;color: #2e2e35">LLENA LOS SIGUIENTES CAMPOS:</h2>
             </div>    
             <div class="row benefits">
-               
-                <form>
-                     <div class="item col-md-8 col-sm-8 col-xs-12 ">
-                    <form role="form" method="post" action='model/registro.php'>
-                        <div class="item-inner">
-                            <div class="col-lg-6">
-                               
-                                <div class="form-group">
-                                    <label for="InputName" class="Light">Nombre y apellido de la persona que se va a amparar</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName"
-                                               id="InputName"required>
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-asterisk"></span></span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="InputName" class="Light" >Correo eletrónico para recibir el comprobante</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName"
-                                               id="InputName"required>
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-asterisk"></span></span>
-                                    </div>
-                                </div>
-                                
-                                   <hr style="background-color: #666666">
-                        <p class="Light">Datos de la tarjeta con la que se va a realizar el pago de $2,200 MXM</p>
-                        <img src="img/Mastercard.png" style="width: 50px;height: 30px;">
-                        <img src="img/visa.png" style="width: 50px;height: 30px;">
-                        <img src="img/American-Express.png" style="width: 50px;height: 30px;">
-                        <br>
-                        <br>
-                         <div class="form-group">
-                                    <label for="InputName" class="Light" >Número de tarjeta</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName"
-                                               id="InputName"required placeholder="xxxx xxxx xxxx xxxx">
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-asterisk"></span></span>
-                                    </div>
-                                </div>
-                        
-                        
-                        <div class="form-group">
-                                    <label for="InputName" class="Light" >Fecha de vencimiento</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName"
-                                               id="InputName"required placeholder="Mes">
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-asterisk"></span></span>
-                                    
-                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName"
-                                               id="InputName"required placeholder="Año" >
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-asterisk"></span></span>
-                                    </div>
-                                </div>
-                        </div>   
-                        <div class="form-group">
-                                    <label for="InputName" class="Light" >Código de seguridad </label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName"
-                                               id="InputName"required style="width: 120px;">
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-asterisk"></span></span>
-                                    </div>
-                                </div>
-                        
-                         <input type="checkbox" name="option1" value="acept" required="" class="Light"> He leído y estoy de acuerdo con los <u style="color: #198892">Términos 
-                        y Condiciones</u> y <u style="color: #198892" >Aviso de Privacidad</u>.<br>
-                        
-                        <br>
-                        <center>
-                        <input type="submit"  class="btn btn-cta btn-cta-primary Medium"  name="submit" id="submit" value="Pagar">
-                        </center>
-                            </div><!--l//item-inner-->    
-                </div>
-                    
 
-            </div>
-                      
+                <form role="form" method="post" action="./model/registro.php">
+                    <div class="item col-md-12 col-sm-8 col-xs-12 ">
+                        <form role="form" method="post" action='model/registro.php'>
+                            <div class="item-inner">
+                                <div class="col-lg-6">
+
+                                    <div class="form-group">
+                                        <label for="InputName" class="Light" style="font-size: x-large">Nombre y apellido de la persona que se va a amparar</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="Nombre"
+                                                   id="InputName"required>
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-asterisk"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputName" class="Light" style="font-size: x-large">Correo eletrónico para recibir el comprobante</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="email"
+                                                   id="InputName"required>
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-asterisk"></span></span>
+                                        </div>
+                                    </div>
+
+                                    <hr style="background-color: #666666;width: auto">
+                                    <p class="Light" style="font-size: x-large">Datos de la tarjeta con la que se va a realizar el pago de $2,200 MXM</p>
+                                    <img src="img/Mastercard.png" style="width: 50px;height: 30px;">
+                                    <img src="img/visa.png" style="width: 50px;height: 30px;">
+                                    <img src="img/American-Express.png" style="width: 50px;height: 30px;">
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="InputName" class="Light" style="font-size: x-large">Número de tarjeta</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputName"
+                                                   id="InputName"required placeholder="xxxx xxxx xxxx xxxx">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-asterisk"></span></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="InputName" class="Light" style="font-size: x-large" >Fecha de vencimiento</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputName"
+                                                   id="InputName"required placeholder="Mes">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-asterisk"></span></span>
+
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="InputName"
+                                                       id="InputName"required placeholder="Año" >
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-asterisk"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="form-group">
+                                        <label for="InputName" class="Light" style="font-size: x-large" >Código de seguridad </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputName"
+                                                   id="InputName"required style="width: 120px;">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-asterisk"></span></span>
+                                        </div>
+                                    </div>
+
+                                    <input type="checkbox" name="option1" value="acept" required="" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <u style="color: #198892;font-size: medium">Términos 
+                                        y Condiciones</u> y <u style="color: #198892;font-size: medium" >Aviso de Privacidad</u>.<br>
+
+                                    <br>
+                                    <center>
+                                        <input type="submit"  class="btn btn-cta btn-cta-primary Medium"  name="submit" id="submit" style="font-size: x-large" value="Pagar">
+                                    </center>
+                                </div><!--l//item-inner-->    
+                            </div>
+
+
+                    </div>
+
                 </form>
-                                 
+
 
         </section>
 
@@ -168,7 +168,7 @@
                 <div class="container center">        
                     <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
                     <br>
-                    <h4 class="Light" style="color: white;font-size: x-large">Síguenos en:</h4>
+                    <p class="Light" style="color: white;font-size: xx-large">Síguenos en:</p>
                     <center>
                         <TABLE >
 
