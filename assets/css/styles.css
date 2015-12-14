@@ -51,10 +51,11 @@ a.btn:focus {
 a.btn-cta,
 .btn-cta {
   padding: 8px 30px;
+  border: 2px;
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #198892;
+  background: #198892; //clor boton
   border: none;
   color: #fff;
 }
@@ -84,7 +85,6 @@ a.btn-cta-secondary:hover,
   -moz-box-shadow: none;
   box-shadow: none;
   height: 40px;
-  width: 80px;
   border-color: #eeeeee;
 }
 .form-control::-webkit-input-placeholder {
@@ -183,7 +183,7 @@ select {
 }
 .bg-slider-wrapper .flexslider .slide {
   display: block;
-  height: 600px;
+  height: 650px;
 }
 .bg-slider-wrapper .flexslider {
   background: #65758e url('../images/background/fondo.jpg') no-repeat 50% top;
@@ -209,9 +209,48 @@ body.no-header-wrapper {
   padding-top: 80px;
 }
 .header-wrapper-home {
-  min-height: 600px;
+  min-height: 650px;
 }
-
+.header-wrapper-work {
+  background: #65758e url('../images/background/heading-background-1.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+.header-wrapper-case-study {
+  background: #65758e url('../images/background/case-study-background-1.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+.header-wrapper-about {
+  background: #65758e url('../images/background/heading-background-2.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+.header-wrapper-blog-home {
+  background: #65758e url('../images/background/heading-background-3.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+.header-wrapper-contact {
+  background: #65758e url('../images/background/heading-background-4.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
 .header {
   color: #fff;
   width: 100%;
@@ -267,7 +306,7 @@ body.no-header-wrapper {
   outline: none;
 }
 .header .main-nav .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   height: 3px;
 }
 .header .main-nav .navbar-toggle:hover .icon-bar {
@@ -423,7 +462,7 @@ body.no-header-wrapper {
   font-family: 'Merriweather Sans', arial, sans-serif;
   font-style: italic;
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 500;
 }
 .home-promo .btn {
   font-size: 20px;
@@ -435,7 +474,7 @@ body.no-header-wrapper {
 }
 .who .title {
   font-size: 36px;
-  font-family: 'Open Sans', arial, sans-serif;
+  //font-family: 'Open Sans', arial, sans-serif;
   font-weight: 800;
   color: #505c70;
   margin-top: 0;
@@ -1162,7 +1201,7 @@ body.no-header-wrapper {
   color: #65758e;
 }
 .services .btn-cta {
-  font-size: 35px;
+  
   margin-top: 30px;
 }
 /* ======= About Us ======= */
@@ -1634,7 +1673,7 @@ body.no-header-wrapper {
   max-width: 168px;
 }
 .blog-sidebar .search-blog-form .form-control {
-  height: 40px;
+  height: 38px;
 }
 .blog-sidebar .search-blog-form .btn {
   padding: 8px 12px;
@@ -2225,7 +2264,7 @@ body.no-header-wrapper {
     padding-top: 50px;
   }
   .header-wrapper-home {
-    min-height: 500px;
+    min-height: 560px;
   }
   .header .main-nav .nav .nav-item {
     margin-right: 0;
@@ -2263,7 +2302,7 @@ body.no-header-wrapper {
     padding-top: 100px;
   }
   .header-wrapper-home {
-    min-height:400px;
+    min-height: 460px;
   }
   .promo .title .middle {
     font-size: 38px;
