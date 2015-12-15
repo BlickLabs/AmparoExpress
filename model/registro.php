@@ -1,5 +1,4 @@
-<?php
-
+<?php error_reporting(E_ALL);
 require_once("../conekta-php/lib/Conekta.php");
 Conekta::setApiKey("key_eYvWV7gSDkNYXsmr");
 Conekta::setLocale('es');
@@ -47,17 +46,13 @@ $charge = Conekta_Charge::create(array(
                     'email' => 'purshasing@x-men.org'
                 )
             )
-        ));
+        )); 
 
 
 } catch (Conekta_Error $e){
   echo $e->getMessage();
   
 }
-
-
-
-
 $token = $charge->status;
 
 if ($token == paid) {
@@ -67,5 +62,8 @@ header('Location: ../aprobado.html');
 }else {
     header('Location: ../rechazado.html');
 }
+
+
+
 ?>
 
