@@ -1,4 +1,4 @@
-<?php error_reporting(0);
+<?php error_reporting(E_ALL);
 require_once("../conekta/lib/Conekta.php");
 Conekta::setApiKey("key_eYvWV7gSDkNYXsmr");
 Conekta::setLocale('es');
