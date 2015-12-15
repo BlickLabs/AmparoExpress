@@ -54,14 +54,14 @@ $charge = Conekta_Charge::create(array(
   
 }
 $token = $charge->status;
-echo $token;
-//if ($token == paid) {
-//   
-//require_once 'init.php';
-//header('Location: ../aprobado.html');
-//}else {
-//    header('Location: ../rechazado.html');
-//}
+//echo $token;
+if ($token == paid) {
+   
+require_once 'init.php';
+header('Location: ../aprobado.html');
+}else {
+    header('Location: ../rechazado.html');
+}
 
 
 
