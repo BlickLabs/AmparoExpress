@@ -511,6 +511,51 @@ body.no-header-wrapper {
 .who .benefits .desc {
   color: #65758e;
 }
+//aqui
+/* ======= Who ======= */
+.who2 {
+  padding: 50px 0;
+}
+.who2 .title {
+  font-size: 36px;
+  //font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 800;
+  color: #505c70;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.who2 .intro {
+  margin: 0 auto;
+  max-width: 700px;
+  color: #666;
+  font-size: 20px;
+  color: #65758e;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+.who2 .benefits .item {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.who2 .benefits .item .fs1 {
+  font-size: 36px;
+  color: #65758e;
+}
+.who2 .benefits .item-inner {
+  padding: 30px;
+  padding-top: 45px;
+  background: #f8f9fa;
+}
+.who2 .benefits .sub-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #505c70;
+}
+.who2 .benefits .desc {
+  color: #65758e;
+}
+
 /* ======= Latest work ======= */
 .latest-work {
   padding: 80px 0;
