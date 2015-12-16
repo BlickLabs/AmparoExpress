@@ -18,8 +18,8 @@ p {
   line-height: 1.5;
 }
 .p2 {
-  margin-bottom: 30px;
-  line-height: 1.5px;
+  //margin-bottom: 30px;
+  line-height: 25px;
 }
 a {
   color: #5cbbdb;
@@ -213,7 +213,7 @@ select {
   height: 650px;
 }
 .bg-slider-wrapper .flexslider {
-  background: #65758e url('../images/background/fondo.jpg') no-repeat 50% top;
+  background: #65758e url('../images/background/fondo_2.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
