@@ -1,7 +1,6 @@
-<?php
-
+<?php error_reporting(E_ALL);
      include("../model/conexion.php");
-    $name = $_POST['Nombre'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
 //# Include the Autoloader (see "Libraries" for install instructions)
     require '../vendor/autoload.php';
@@ -33,9 +32,8 @@
 
 
 
-// Change database 
-    mysqli_select_db($con, "$dbname");
-
+//// Change database 
+mysqli_select_db($con, "$dbname");
 
     $query = mysqli_query($con, "INSERT INTO User (email,name) 
 VALUES ('$email','$name')");
