@@ -5,7 +5,7 @@
     $name2 = $_POST['name'];
 $email2 = $_POST['email'];
 $mensaje=$_POST['message'];
-$asunto=$_POST['subject'];
+$asunto='Un cliente requiere de mayor información: ';
  
   $api_key = 'key-640c4034f076a9f1a0ec13a1e93b1598';
   $api_domain = 'sandboxe6d048d4b3b6442a93835a10e535b542.mailgun.org';
