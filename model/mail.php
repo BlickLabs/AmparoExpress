@@ -7,9 +7,9 @@ $email2 = $_POST['email'];
 $mensaje=$_POST['message'];
 $asunto=$_POST['subject'];
  
-  $api_key = 'key-4e896b8110f1ceb63b180c87bc225c16';
-  $api_domain = 'sandbox8128d26fd2464b42a6dc95e54a7cda2a.mailgun.org';
-  $send_to = 'tonoescom@gmail.com';
+  $api_key = 'key-640c4034f076a9f1a0ec13a1e93b1598';
+  $api_domain = 'sandboxe6d048d4b3b6442a93835a10e535b542.mailgun.org';
+  $send_to = 'contacto@amparoexpress.com';
  
   
   $name = $name2;

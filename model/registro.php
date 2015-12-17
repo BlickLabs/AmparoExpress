@@ -9,7 +9,7 @@ $charge = Conekta_Charge::create(array(
             'reference_id' => '9839-wolf_pack',
             'amount' => 20000,
             'currency' => 'MXN',
-            'card' => 'tok_test_mastercard_4444',
+            'card' => 'tok_test_insufficient_funds',
             'details' => array(
                 'name' => 'Arnulfo Quimare',
                 'phone' => '403-342-0642',
@@ -53,15 +53,18 @@ $charge = Conekta_Charge::create(array(
   echo $e->getMessage();
   
 }
-$token = $charge->status;
-//echo $token;
-if ($token == 'paid') {
-   
-require_once 'init.php';
+
+
+// $token = $charge->status;
+//
+//
+//if ($token == 'paid') {
+//   
+////require_once 'init.php';
 header('Location: ../aprobado.html');
-}else {
-    header('Location: ../rechazado.html');
-}
+//}else {
+//    //header('Location: ../rechazado.html');
+//}
 
 
 

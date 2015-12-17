@@ -7,14 +7,14 @@
     use Mailgun\Mailgun;
 
 //# Instantiate the client.
-    $mgClient = new Mailgun('key-4e896b8110f1ceb63b180c87bc225c16');
-    $domain = "sandbox8128d26fd2464b42a6dc95e54a7cda2a.mailgun.org";
+    $mgClient = new Mailgun('key-640c4034f076a9f1a0ec13a1e93b1598');
+    $domain = "sandboxe6d048d4b3b6442a93835a10e535b542.mailgun.org";
 //
 //# Make the call to the client.
     $result = $mgClient->sendMessage($domain, array(
-        'from' => 'AmparoExpress <postmaster@sandbox8128d26fd2464b42a6dc95e54a7cda2a.mailgun.org>',
+        'from' => 'AmparoExpress <postmaster@sandboxe6d048d4b3b6442a93835a10e535b542.mailgun.org>',
         'to' => $email,
-        'subject' => 'AmparoExpress',
+        'subject' => 'Tu amparo está en proceso.',
         'text' => 'Hola ' . $name . ',
 
         ¡Gracias por confiar en amparoexpress!
