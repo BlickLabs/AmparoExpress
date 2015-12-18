@@ -23,7 +23,6 @@
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="./css/font-face.css">
-
         <!-- Theme CSS -->
         <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,10 +33,10 @@
     </head> 
 
     <body >     
-        <div class="row" >
+        <div >
             <!-- ******HEADER****** --> 
-            <header id="header" class="header navbar-fixed-tops">  
-                <div class="container">       
+            <header id="header" class="header navbar-fixed-top">  
+                <div >       
                     <h1 class="logo">
                         <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 200px;padding-left: 15px" /></a>
                     </h1><!--//logo-->
@@ -51,7 +50,7 @@
                             </button><!--//nav-toggle-->
                         </div><!--//navbar-header-->
                         <div id="navbar-collapse" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
+                           <ul class="nav navbar-nav">
                                 <li class="active nav-item"><a href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a href="quienes_somos.html">Quienes Somos</a></li>
                                 <li class="nav-item last"><a href="proximamente.html">Amparos</a></li>
@@ -62,24 +61,25 @@
                     </nav><!--//main-nav-->
                 </div><!--//container-->
             </header><!--//header-->   
-
         </div><!--//header-wrapper-->
-
-        <!-- ******Why Section****** -->
-        <section id="who" class="who2 section">
-            <div class="container text-center">
-                <h2 class="Medium" style="font-size: xx-large;color: #2e2e35">LLENA LOS SIGUIENTES CAMPOS:</h2>
-            </div> 
+        
+        <div style="padding-top: 70px;padding-bottom: 30px">
+            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center">CONTÁCTANOS</p>
+        </div>
+        <section id="who" class="who2 section " style="background-image: url(./img/fondo_verde.png)">
+              
+            <div class="container ">
+                
+    <div class="row benefits  ">
+        <div >
+            <br>
+        <form role="form" method="post" id="coneckta_form" action="./conekta_card/conekta_card.php">   
             <br>
             <br>
-
-            <div class="row benefits" >
-                <div class="item " >
-                    <div class="item-inner col-xs-12" >
-
-                        <div class="col-lg-6 centered">
-                            <form role="form" method="post" action="./model/mail.php">
-                                <TABLE >
+            
+            <div class="col-lg-6 ">
+                <br>
+                <TABLE >
 
                                 <tr>
                                  <td>
@@ -104,7 +104,7 @@
                                 <br>
                                 
                                 <div class="form-group">
-                                    <label for="InputName" class="Light" style="font-size: x-large">Nombre(s) y Apellidos</label>
+                                    <label for="InputName" class="Light" style="font-size: large">Nombre(s) y Apellidos</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="name"
                                                id="InputName"required>
@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputName" class="Light" style="font-size: x-large">Correo eletrónico</label>
+                                    <label for="InputName" class="Light" style="font-size: large">Correo eletrónico</label>
                                     <div class="input-group">
                                         <input type="email" class="form-control" name="email"
                                                id="InputName"required>
@@ -123,7 +123,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="InputMessage" class="Light" style="font-size: x-large">Mensaje</label>
+                                    <label for="InputMessage" class="Light" style="font-size:large">Mensaje</label>
                                     <div class="input-group">
                                         <textarea name="message" id="InputMessage"
                                                   class="form-control"
@@ -140,29 +140,29 @@
                                 <center>
                                     <input type="submit"  class="solicita Medium"  name="submit" id="submit" style="font-size: x-large" value="Enviar">
 
-                                </center>
-                            </form>
-                        </div>
-
-                    </div>
-                </div><!--l//item-inner--> 
-            </div>     
-
-
-
-
-
+                                </center>      
+                            <br>
+            <br>
+            <br>
+            </div>
+            
+        </form>
+        </div> 
+    </div>
+</div>  
         </section>
 
 
-        <div class="row">
+
+
+        <div >
         <!-- ******FOOTER****** --> 
         <footer class="footer">
             <div class="bottom-bar">
 
                 <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
                 <br>
-                <h4 class="Light" style="color: white;font-size:x-large">Síguenos en:</h4>
+                <p class="Light" style="color: white;font-size:xx-large">Síguenos en:</p>
                 <center>
                     <TABLE >
 
@@ -179,44 +179,37 @@
 
 
 
-        <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
-        <div class="config-wrapper">
 
-        </div><!--//config-wrapper-->
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>             
+    <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
-        <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <!-- Flexslider -->    
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script> 
+    <script type="text/javascript" src="assets/js/flexslider-custom.js"></script>     
 
+    <!-- Form Validation -->
+    <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
+    <script type="text/javascript" src="assets/js/form-validation-custom.js"></script>
 
-        <!-- Main Javascript -->          
-        <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-        <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
-        <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>             
-        <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
-        <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
-        <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- Form iOS fix -->
+    <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
+    <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
 
-        <!-- Flexslider -->    
-        <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script> 
-        <script type="text/javascript" src="assets/js/flexslider-custom.js"></script>     
-
-        <!-- Form Validation -->
-        <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
-        <script type="text/javascript" src="assets/js/form-validation-custom.js"></script>
-
-        <!-- Form iOS fix -->
-        <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
-        <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
-
-        <!-- Owl Carousel -->
-        <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script> 
-        <script type="text/javascript" src="assets/js/owl-custom.js"></script> 
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script> 
+    <script type="text/javascript" src="assets/js/owl-custom.js"></script> 
 
 
-        <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-        <script src="assets/js/demo/style-switcher.js"></script>
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>
 
-    </body>
+</body>
 </html> 
 

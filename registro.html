@@ -30,10 +30,11 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        
     </head> 
 
     <body >     
-        <div class="row">
+        <div >
             <!-- ******HEADER****** --> 
             <header id="header" class="header navbar-fixed-top">  
                 <div >       
@@ -63,63 +64,64 @@
             </header><!--//header-->   
         </div><!--//header-wrapper-->
         
-        <section id="who" class="who2 section">
+        <div style="padding-top: 70px;padding-bottom: 30px">
+            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center">LLENA LO SIGUIENTES CAMPOS:</p>
+        </div>
+        <section id="who" class="who2 section " style="background-image: url(./img/fondo_verde.png)">
+              
+            <div class="container ">
+                
+    <div class="row benefits  ">
+        <div >
             <br>
-            <br><br>
-
-            <div class="container text-center">
-                <h2 class="Medium" style="font-size: x-large;color: #2e2e35">LLENA LOS SIGUIENTES CAMPOS:</h2>
-            </div> 
+        <form role="form" method="post" id="coneckta_form" action="./conekta_card/conekta_card.php" onsubmit="return checkForm(this);">   
             <br>
             <br>
-
-            <div class="row benefits" >
-
-                <div class="item-inner col-xs-12" >
-
-                    <div class="col-lg-6 ">
-                        <form role="form" method="post" id="coneckta_form" action="./conekta_card/conekta_card.php">   
-
-
-                            <div class="form-group">
-                                <label for="InputName" class="Light" style="font-size: x-large">Nombre y apellido de la persona que se va a amparar</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="name"
-                                           id="InputName"required>
-                                    <span class="input-group-addon"><span
-                                            class="glyphicon glyphicon-asterisk"></span></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="InputName" class="Light" style="font-size: x-large">Correo eletrónico para recibir el comprobante</label>
-                                <div class="input-group">
-                                    <input type="email" class="form-control" name="email"
-                                           id="InputName"required>
-                                    <span class="input-group-addon"><span
-                                            class="glyphicon glyphicon-asterisk"></span></span>
-                                </div>
-                            </div>
-
-                            <hr style="background-color: #666666;width: auto">
-                            <p class="Light" style="font-size: x-large">Datos de la tarjeta con la que se va a realizar el pago de $2,200 MXN</p>
+            <fieldset>
+            <div class="col-lg-6 ">
+                <br>
+                <div class="form-group ">
+                    <label for="InputName" class="Light" style="font-size: large">Nombre y apellido de la persona que se va a amparar</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="name" id="InputName" 
+                        onchange=" this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                        if(this.checkValidity()) form.name2.pattern = this.value;"required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="InputName" class="Light" style="font-size: large">Confirmar Nombre y apellidos:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="name2" title="El Nombre no coincide" id="InputName" 
+                               onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"
+                               required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail" class="Light" style="font-size: large">Correo eletrónico para recibir el comprobante</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="InputEmailFirst" name="email"  required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+               <hr style="background-color: #666666;width: auto">
+                            <p class="Light" style="font-size:large" class="Light">Datos de la tarjeta con la que se va a realizar el pago de $2,200 MXN</p>
                             <img src="img/Mastercard.png" style="width: 50px;height: 30px;">
                             <img src="img/visa.png" style="width: 50px;height: 30px;">
                             <img src="img/American-Express.png" style="width: 50px;height: 30px;">
                             <br>
                             <br>
-                            <div class="form-group">
-                                <label for="InputName" class="Light" style="font-size: x-large">Número de tarjeta</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="number" pattern="[0-9]{15,16}" title="El número de tarjeta son 16 dígitos "
-                                           id="InputName"required placeholder="xxxx xxxx xxxx xxxx" data-conekta="card[number]">
-                                    <span class="input-group-addon"><span
-                                            class="glyphicon glyphicon-asterisk"></span></span>
-                                </div>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="InputName" class="Light" style="font-size: x-large" >Fecha de vencimiento</label>
+                <div class="form-group">
+                    <label for="InputName" class="Light" style="font-size: large">Número de tarjeta</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="number" pattern="[0-9]{15,16}" title="El número de tarjeta son 16 dígitos "
+                            id="InputName"required placeholder="xxxx xxxx xxxx xxxx" data-conekta="card[number]">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+               </div>
+               <div class="form-group">
+                                <label for="InputName" class="Light" style="font-size: large" >Fecha de vencimiento</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="exp_month" pattern="[0-9]{2}" title="Formato válido 2 dígitos"
                                            id="InputName"required placeholder="Mes (MM)" data-conekta="card[exp_month]">
@@ -133,9 +135,9 @@
                                                 class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>   
-                            </div>   
-                            <div class="form-group">
-                                <label for="InputName" class="Light" style="font-size: x-large" >Código de seguridad </label>
+                            </div>  
+                <div class="form-group">
+                                <label for="InputName" class="Light" style="font-size: large" >Código de seguridad </label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="cvc"  pattern="[0-9]{3,4}" 
                                            id="InputName"required style="width: 120px;" data-conekta="card[cvc]">
@@ -152,21 +154,22 @@
                             <center>
                                 <input type="submit"  class="solicita Medium"  name="submit" id="submit" style="font-size: x-large" value="Pagar">
 
-                            </center>
-                        </form>
-
-
-                    </div>
-
-                </div>
-
-            </div>     
+                            </center>      
+                            <br>
+            <br>
+            <br>
+            </div>
+            </fieldset>
+        </form>
+        </div> 
+    </div>
+</div>  
         </section>
 
 
 
 
-        <div class="row">
+        <div >
         <!-- ******FOOTER****** --> 
         <footer class="footer">
             <div class="bottom-bar">
