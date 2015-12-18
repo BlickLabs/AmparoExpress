@@ -74,29 +74,20 @@
     <div class="row benefits  ">
         <div >
             <br>
-        <form role="form" method="post" id="coneckta_form" action="./conekta_card/conekta_card.php" onsubmit="return checkForm(this);">   
+        <form role="form" method="post" id="coneckta_form" action="./conekta_card/conekta_card.php" >   
             
-            <fieldset>
+            
             <div class="col-lg-6 ">
                 <br>
+                <fieldset>
                 <div class="form-group ">
                     <label for="InputName" class="Light" style="font-size: large">Nombre y apellido de la persona que se va a amparar</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="name" id="InputName" 
-                        onchange=" this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
-                        if(this.checkValidity()) form.name2.pattern = this.value;"required>
+                        <input type="text" class="form-control" name="name" id="InputName" required>
                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                     </div>
                 </div>
-                <div class="form-group ">
-                    <label for="InputName" class="Light" style="font-size: large">Confirmar Nombre y apellidos:</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="name2" title="El Nombre no coincide" id="InputName" 
-                               onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"
-                               required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
+                
                 <div class="form-group">
                     <label for="InputEmail" class="Light" style="font-size: large">Correo eletrónico para recibir el comprobante</label>
                     <div class="input-group">
@@ -135,6 +126,7 @@
                                     </div>
                                 </div>   
                             </div>  
+                            
                 <div class="form-group">
                                 <label for="InputName" class="Light" style="font-size: large" >Código de seguridad </label>
                                 <div class="input-group">
@@ -158,7 +150,8 @@
             <br>
             <br>
             </div>
-            </fieldset>
+                
+            
         </form>
         </div> 
     </div>
