@@ -38,8 +38,8 @@ try{
     ));
   $toke=$charge->status;
   if ($toke=='paid'){
-    require_once '../model/init.php';
-           require_once '../model/mail_pagos_exitosos.php';
+    //require_once '../model/init.php';
+     //      require_once '../model/mail_pagos_exitosos.php';
             header('Location: ../aprobado.html');
   }
 } catch (Exception $ex) {
