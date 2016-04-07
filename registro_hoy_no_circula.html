@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+    <head>
+        <title>AmparoExpress</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <meta name="description" content="">
+        <meta name="author" content="">    
+        <link rel="icon" type="image/png" href="./img/favicon.ico" />
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <!-- Global CSS -->
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+        <!-- Plugins CSS -->    
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+        <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+        <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="./css/font-face.css">
+        <!-- Theme CSS -->
+        <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
+        <script type="text/javascript"> Conekta.setPublishableKey('key_EMcsXk79MWUquqSY4bBUTxw');</script>
+      <script type="text/javascript">
+          function validar()
+          {
+             var name=document.getElementById("name").value;
+             var name1=document.getElementById("name1").value;
+             if (name!=name1)
+             {
+               $(document).ready(function(){
+               
+               $("#myModal").modal();
+              
+              });
+               return false;
+             }
+             else
+               return true;
+               
+          }
+            
+          
+                $(function () {
+      $("#card-form").submit(function(event) {
+        var $form = $(this);
+
+        // Previene hacer submit más de una vez
+        $form.find("button").prop("disabled", true);
+        Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+
+        // Previene que la información de la forma sea enviada al servidor
+        return false;
+      });
+    });
+    
+        var conektaSuccessResponseHandler = function(token) {
+  var $form = $("#card-form");
+
+  /* Inserta el token_id en la forma para que se envíe al servidor */
+  $form.append($("<input type='hidden' name='conektaTokenId'>").val(token.id));
+ 
+  /* and submit */
+  $form.get(0).submit();
+};
+    var conektaErrorResponseHandler = function(response) {
+  var $form = $("#card-form");
+  
+  /* Muestra los errores en la forma */
+  $form.find(".card-errors").text(response.message);
+  $form.find("button").prop("disabled", false);
+};
+          
+        </script>
+    </head> 
+    <body>     
+        <div>
+            <!-- ******HEADER****** --> 
+            <header id="header" class="header navbar-fixed-top">  
+                <div >       
+                    <h1 class="logo">
+                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 200px;padding-left: 15px"></a>
+                    </h1><!--//logo-->
+                    <nav class="main-nav navbar-right" role="navigation">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button><!--//nav-toggle-->
+                        </div><!--//navbar-header-->
+                        <div id="navbar-collapse" class="navbar-collapse collapse">
+                           <ul class="nav navbar-nav">
+                                <li class="active nav-item"><a href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a href="quienes_somos.html">Quienes Somos</a></li>
+                                <li class="nav-item last"><a href="proximamente.html">Amparos</a></li>
+                                <li class="nav-item"><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>                                              
+                                <li class="nav-item last"><a href="contacto.html">Contacto</a></li>
+                            </ul><!--//nav-->
+                        </div><!--//navabr-collapse-->
+                    </nav><!--//main-nav-->
+                </div><!--//container-->
+            </header><!--//header-->   
+        </div><!--//header-wrapper-->
+        <div style="padding-top: 70px;padding-bottom: 30px">
+            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center">LLENA LO SIGUIENTES CAMPOS:</p>
+        </div>
+        <section id="who" class="who2 section " style="background-image: url(./img/fondo_verde.png)">
+            <div class="container ">
+                <div class="row benefits  col-md-10 col-md-offset-1">
+                <div >
+                    <form action="conekta_card/MyConekta.php" method="POST" id="card-form" onsubmit="return validar();" >   
+                        <div class="col-md-8 col-md-offset-2">
+                            <br>
+                            <div class="form-group ">
+                                <label for="InputName" class="Light" style="font-size: large">Nombre y apellido de la persona que se va a amparar:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="name" id="name" required data-conekta="card[name]">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="InputName" class="Light" style="font-size: large">Confirmar Nombre y Apellidos:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control"  name="name1" id="name1" title="El Nombre no coincide, por favor por favor verifiquelo" required>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputEmail" class="Light" style="font-size: large">Correo eletrónico para recibir el comprobante :</label>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                </div>
+                            </div>
+                            <hr style="background-color: #666666;width: auto">
+                            <p class="Light" style="font-size:large" >Datos de la tarjeta con la que se va a realizar el pago de $2,200 MXN</p>
+                            <img src="img/Mastercard.png" style="width: 50px;height: 30px;">
+                            <img src="img/visa.png" style="width: 50px;height: 30px;">
+                            <img src="img/American-Express.png" style="width: 50px;height: 30px;">
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <label for="InputName" class="Light" style="font-size: large">Número de tarjeta:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="number"
+                                        id="number" required placeholder="xxxx xxxx xxxx xxxx" data-conekta="card[number]">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                </div>
+                           </div>
+                            <div class="form-group">
+                                <label for="InputName" class="Light" style="font-size: large" >Fecha de vencimiento :</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="exp_month" 
+                                           id="exp_month" required placeholder="Mes (MM)" data-conekta="card[exp_month]">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-asterisk"></span></span>
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="exp_year" 
+                                               id="exp_year" required placeholder="Año (AAAA)" data-conekta="card[exp_year]">
+                                        <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>   
+                            </div>  
+                            <div class="form-group">
+                                <label for="InputName" class="Light" style="font-size: large" >Código de seguridad:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="cvc"  
+                                           id="cvc" required style="width: 120px;"  data-conekta="card[cvc]">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-asterisk"></span></span>
+                                </div>
+                            </div>
+                            <input type="checkbox" required   name="option1" value="acept" required="Acepta los terminos y condiciones" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <a href="./terminos_condiciones.html"><u style="color: #198892;font-size: medium">Términos 
+                                    y Condiciones</u></a> y <a href="./aviso_privacidad.html"><u style="color: #198892;font-size: medium" >Aviso de Privacidad</u></a>.<br>
+
+                            <br>
+                            <br>
+                            <center>
+                            <div class="col-md-2 col-md-offset-5 " style="padding-bottom: 20px">
+                                <button type="submit" class="solicita Medium "  style="font-size: x-large">Pagar</button>
+                            
+                            </div>
+                                </center>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </form>
+                </div>
+                </div>  
+        </section>
+        <!-- ******FOOTER****** --> 
+        <footer class="footer">
+            <div class="bottom-bar">
+                <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
+                <br>
+                <p class="Light" style="color: white;font-size:xx-large">Síguenos en:</p>
+                <center>
+                    <TABLE >
+                        <TR> <TD><a href="https://www.facebook.com/amparoexpressmx?_rdr=ps"><img src="img/facebook.png" style="width: 60px;height: 50px;padding-right: 5px"/></a></td><TD><a href="https://twitter.com/AmparoExpressMX"><img src="img/twitter.png" style="width: 60px;height: 50px;padding-left: 5px;"/></a></td></TR>
+                    </TABLE>
+                </center>    
+                <br>
+                <br>
+            </div><!--//bottom-bar-->
+        </footer><!--//footer-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h5 class="modal-title" style="font-size: 20px;">Atención</h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>Los nombres ingresados no coinciden,por favor verificalos</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Javascript -->          
+        <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>             
+        <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+        <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <!-- Flexslider -->    
+        <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script> 
+        <script type="text/javascript" src="assets/js/flexslider-custom.js"></script>     
+        <!-- Form Validation -->
+        <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
+        <script type="text/javascript" src="assets/js/form-validation-custom.js"></script>
+        <!-- Form iOS fix -->
+        <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
+        <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
+        <!-- Owl Carousel -->
+        <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script> 
+        <script type="text/javascript" src="assets/js/owl-custom.js"></script> 
+        <!-- Modal -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- conekta functions -->
+       
+        
+    </body> 
+</html> 
+
