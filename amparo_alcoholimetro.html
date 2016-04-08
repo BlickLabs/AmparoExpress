@@ -80,6 +80,16 @@
 };
           
         </script>
+        <script type="text/javascript">  
+$(function() { 
+    $(".btn").click(function(){
+        $(this).button('loading').delay(1000).queue(function() {
+            $(this).button('reset');
+            $(this).dequeue();
+        });        
+    });
+});   
+    </script>
     </head> 
 
     <body>     
@@ -121,7 +131,7 @@
         </div><!--//header-wrapper-->
         <div style="padding-top: 70px;padding-bottom: 30px">
             <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center">LLENA LO SIGUIENTES CAMPOS:</p>
-            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center;margin-top:-40px">PARA CIRCULAR TODOS LOS DÍAS</p>
+            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center;margin-top:-40px">PARA SALIR DEL TORITO</p>
         </div>
         <section id="who" class="who2 section " style="background-image: url(./img/fondo_verde.png)">
             <div class="container ">
@@ -191,14 +201,14 @@
                                             class="glyphicon glyphicon-asterisk"></span></span>
                                 </div>
                             </div>
-                            <input type="checkbox" required   name="option1" value="acept" required="Acepta los terminos y condiciones" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <a href="./terminos_condiciones_alcoholimetro.html"><u style="color: #198892;font-size: medium">Términos 
+                            <input type="checkbox" required=""   name="option1" value="acept" required="Acepta los terminos y condiciones" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <a href="./terminos_condiciones_alcoholimetro.html"><u style="color: #198892;font-size: medium">Términos 
                                     y Condiciones</u></a> y <a href="./aviso_privacidad.html"><u style="color: #198892;font-size: medium" >Aviso de Privacidad</u></a>.<br>
 
                             <br>
                             <br>
                             <center>
                             <div class="col-md-2 col-md-offset-5 " style="padding-bottom: 20px">
-                                <button type="submit" class="solicita Medium "  style="font-size: x-large">Pagar</button>
+                                <button type="submit" class="solicita Medium "  style="font-size: x-large" data-loading-text="Loading...">Pagar</button>
                             
                             </div>
                                 </center>
