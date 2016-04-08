@@ -39,7 +39,7 @@
             <header id="header" class="header navbar-fixed-tops">  
                 <div class="container">       
                     <h1 class="logo">
-                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 200px;padding-left: 15px" /></a>
+                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 200px;padding-left: 15px" /></span></a>
                     </h1><!--//logo-->
                     <nav class="main-nav navbar-right" role="navigation">
                         <div class="navbar-header">
@@ -52,10 +52,16 @@
                         </div><!--//navbar-header-->
                         <div id="navbar-collapse" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active nav-item"><a href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a href="quienes_somos.html">Quienes Somos</a></li>
-                                <li class="nav-item last"><a href="proximamente.html">Amparos</a></li>
-                                <li class="nav-item"><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>                                              
+                                <li class="active nav-item last"><a href="amparos.html">Amparos</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Preguntas Frecuentes</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="faqs_hoy_no_circula.html" class="nav-item">Hoy no circula</a></li>
+                                            <li><a href="faqs_alcoholimetro.html" class="nav-item">Alcoholimetro</a></li>
+                                        </ul>    
+                                </li>                                              
                                 <li class="nav-item last"><a href="contacto.html">Contacto</a></li>
                             </ul><!--//nav-->
                         </div><!--//navabr-collapse-->
@@ -68,24 +74,24 @@
         <!-- ******Why Section****** -->
         <section id="who" class="who2 section">
             <div class="container text-center">
-                <h2 class="Medium" style="font-size: xx-large;color: #2e2e35">PR&Oacute;XIMOS AMPAROS</h2>
+                <h2 class="Medium" style="font-size: xx-large;color: #2e2e35;margin-top: 50px;margin-bottom: 50px;">NUESTROS AMPAROS</h2>
             </div>    
             <div class="row benefits text-center">
                 <div class="item  text-center">
                     <div class="item-inner col-md-offset-4 col-md-4">
                         <div>
-                            <table class="text-center" style="border-collapse: separate; border-spacing:  10px;">
+                            <table class="text-center center-block" style="border-collapse: separate; border-spacing:  10px;">
                                 <tr>
-                                    <td class="Light" style="color: #2e2e35;font-size: large">Amparo contra Hoy no Circula</td>
+                                    <td class="Light" style="color: #2e2e35;font-size: large">Amparo contra el programa “hoy no circula”</td>
                                 </tr>
                                 <tr >
-                                    <td style="padding-bottom: 30px;"><a href="registro_hoy_no_circula.html"><button class="solicita Medium" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static" style="font-size:x-large;">Solicita aquí</button></a>  </td>
+                                    <td style="padding-bottom: 30px;"><a href="amparo_hoy_no_circula.html"><button class="solicita Medium" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static" style="font-size:x-large;">Solicita aquí</button></a>  </td>
                                 </tr >
                                 <tr>
                                     <td  class="Light" style="color: #2e2e35;font-size: large">Amparo contra alcoholímetro</td>
                                 </tr>
                                 <tr>
-                                    <td style="padding-bottom: 30px;"><a href="registro.html"><button class="solicita Medium" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static" style="font-size:x-large;position: relative">Pr&oacute;ximamente</button></a>  </td>
+                                    <td style="padding-bottom: 30px;"><a href="registro_alcoholimetro.html"><button class="solicita Medium" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static" style="font-size:x-large;position: relative">Solicita aquí</button></a>  </td>
                                 </tr> 
                                 <tr>
                                     <td class="Light" style="color: #2e2e35;font-size: large">Amparo contra ilegal orden de aprehensión</td>
@@ -100,7 +106,7 @@
                                 <tr>
                                     <td ><a href="#"><button class="solicita Medium" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static" style="font-size:x-large;position: relative">Pr&oacute;ximamente</button></a>  </td>
                                 </tr>
-                                    
+                                               
                                     
                             </table>                            
                         </div>   
@@ -130,7 +136,7 @@
                 <br>
             </div><!--//bottom-bar-->
          </footer><!--//footer-->
-        </div>
+        
         <!-- Main Javascript -->          
         <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 

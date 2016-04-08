@@ -3,14 +3,14 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
     <head>
-        <title>Amparoxpress</title>
+        <title>AmparoExpress</title>
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">    
-        <link rel="shortcut icon" href="favicon.ico">  
+        <link rel="icon" type="image/png" href="./img/favicon.ico" />
         <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -34,12 +34,12 @@
     </head> 
 
     <body >     
-        <div >
+        <div class="row">
             <!-- ******HEADER****** --> 
             <header id="header" class="header navbar-fixed-tops">  
                 <div class="container">       
                     <h1 class="logo">
-                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 180px;height: 40px;padding-left: 10px" /></a>
+                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 200px;padding-left: 15px" /></span></a>
                     </h1><!--//logo-->
                     <nav class="main-nav navbar-right" role="navigation">
                         <div class="navbar-header">
@@ -52,11 +52,17 @@
                         </div><!--//navbar-header-->
                         <div id="navbar-collapse" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active nav-item"><a href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a href="quienes_somos.html">Quienes Somos</a></li>
-                                <li class="nav-item"><a href=Preguntas_frecuentes.html>Preguntas Frecuentes</a></li>                                              
+                                <li class="nav-item last"><a href="amparos.html">Amparos</a></li>
+                                <li class="active nav-item dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Preguntas Frecuentes</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="faqs_hoy_no_circula.html" class="nav-item">Hoy no circula</a></li>
+                                            <li><a href="faqs_alcoholimetro.html" class="nav-item">Alcoholimetro</a></li>
+                                        </ul>    
+                                </li>                                              
                                 <li class="nav-item last"><a href="contacto.html">Contacto</a></li>
-                                <li class="nav-item last"><a href="Proximamente.html">Amparos</a></li>
                             </ul><!--//nav-->
                         </div><!--//navabr-collapse-->
                     </nav><!--//main-nav-->
@@ -74,7 +80,7 @@
             <br>
             <br>
             <div class="row benefits text-center">
-                <div class="item  text-center">
+                <div class="item  text-center col-md-offset-3 col-md-6">
                     <div class="item-inner">
                         <div >
                             <p class="MediumItalic" style="font-size: x-large;color: #2e2e35">¿Cuál es la tolerancia del nivel de alcohol?</p>
@@ -206,26 +212,27 @@
         </section>
 
 
+        <div class="row">
         <!-- ******FOOTER****** --> 
         <footer class="footer">
+            <div class="bottom-bar">
 
-                                                                    <div class="bottom-bar">
-                                                                        <div class="container center">        
-                                                                            <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
-                                                                            <br>
-                                                                            <h4 class="Light" style="color: white;font-size:xx-large">Síguenos en:</h4>
-                                                                            <center>
-                                                                                <TABLE >
+                <img src="img/negativo.png" style="width: 250px;height:60px;padding: 10px;"> 
+                <br>
+                <p class="Light" style="color: white;font-size:xx-large">Síguenos en:</p>
+                <center>
+                    <TABLE >
 
-                                                                                    <TR> <TD><img src="img/facebook.png" style="width: 60px;height: 50px;padding-right: 5px"/></td><TD><img src="img/twitter.png" style="width: 60px;height: 50px;padding-left: 5px;"/></td></TR>
-                                                                                </TABLE>
-                                                                            </center>    
-                                                                            <br>
-                                                                            <br>
-                                                                            
-                                                                        </div><!--//container-->
-                                                                    </div><!--//bottom-bar-->
-                                                                </footer><!--//footer-->
+                        <TR> <TD><a href="https://www.facebook.com/amparoexpressmx?_rdr=ps"><img src="img/facebook.png" style="width: 60px;height: 50px;padding-right: 5px"/></a></td><TD><a href="https://twitter.com/AmparoExpressMX"><img src="img/twitter.png" style="width: 60px;height: 50px;padding-left: 5px;"/></a></td></TR>
+                    </TABLE>
+                </center>    
+                <br>
+                <br>
+
+
+            </div><!--//bottom-bar-->
+         </footer><!--//footer-->
+        </div>
 
 
 

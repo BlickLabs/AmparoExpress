@@ -89,12 +89,12 @@
         </script>
     </head> 
     <body>     
-        <div class="row">
+            <div >
             <!-- ******HEADER****** --> 
             <header id="header" class="header navbar-fixed-tops">  
                 <div class="container">       
                     <h1 class="logo">
-                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 200px;padding-left: 15px" /></span></a>
+                        <a href="index.html"><span class="highlight"><img src="img/negativo.png" style="width: 180px;height: 40px;padding-left: 10px" /></span></a>
                     </h1><!--//logo-->
                     <nav class="main-nav navbar-right" role="navigation">
                         <div class="navbar-header">
@@ -106,7 +106,7 @@
                             </button><!--//nav-toggle-->
                         </div><!--//navbar-header-->
                         <div id="navbar-collapse" class="navbar-collapse collapse">
-                           <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav">
                                 <li class="nav-item"><a href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a href="quienes_somos.html">Quienes Somos</a></li>
                                 <li class="nav-item last"><a href="amparos.html">Amparos</a></li>
@@ -127,12 +127,13 @@
         </div><!--//header-wrapper-->
         <div style="padding-top: 70px;padding-bottom: 30px">
             <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center">LLENA LO SIGUIENTES CAMPOS:</p>
+            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center;margin-top:-40px">PARA SALIR DEL TORITO</p>
         </div>
         <section id="who" class="who2 section " style="background-image: url(./img/fondo_verde.png)">
             <div class="container ">
                 <div class="row benefits  col-md-10 col-md-offset-1">
                 <div >
-                    <form action="conekta_card/MyConekta.php" method="POST" id="card-form" onsubmit="return validar();" >   
+                    <form action="conekta_card/MyConekta.php" method="POST" id="card-form" onclick="return validar();" >   
                         <div class="col-md-8 col-md-offset-2">
                             <br>
                             <div class="form-group ">
@@ -237,7 +238,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h5 class="modal-title center-block" style="font-size: 20px;"><b>Atención</b></h5>
+                      <h5 class="modal-title" style="font-size: 20px;">Atención</h5>
                     </div>
                     <div class="modal-body">
                       <p>Los nombres ingresados no coinciden,por favor verificalos</p>
