@@ -5,7 +5,7 @@
 
 
    $name = $_POST['name'];
-    $email = 'contacto@amparoexpress.com';
+    $email = 'desarrolloblick@gmail.com';
     $email2=$_POST['email'];
     
 //# Include the Autoloader (see "Libraries" for install instructions)
