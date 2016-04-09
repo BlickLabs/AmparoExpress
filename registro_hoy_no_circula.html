@@ -7,9 +7,7 @@
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=0">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">    
         <link rel="icon" type="image/png" href="./img/favicon.ico" />
@@ -25,14 +23,9 @@
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="./css/font-face.css">
+
         <!-- Theme CSS -->
         <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
         <script type="text/javascript"> Conekta.setPublishableKey('key_EMcsXk79MWUquqSY4bBUTxw');</script>
@@ -88,6 +81,7 @@
           
         </script>
     </head> 
+
     <body>     
         <div class="row">
             <!-- ******HEADER****** --> 
@@ -106,10 +100,10 @@
                             </button><!--//nav-toggle-->
                         </div><!--//navbar-header-->
                         <div id="navbar-collapse" class="navbar-collapse collapse">
-                           <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav">
                                 <li class="nav-item"><a href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a href="quienes_somos.html">Quienes Somos</a></li>
-                                <li class="nav-item last"><a href="amparos.html">Amparos</a></li>
+                                <li class="active nav-item last"><a href="amparos.html">Amparos</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown">Preguntas Frecuentes</a>
                                         <ul class="dropdown-menu">
@@ -127,12 +121,13 @@
         </div><!--//header-wrapper-->
         <div style="padding-top: 70px;padding-bottom: 30px">
             <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center">LLENA LO SIGUIENTES CAMPOS:</p>
+            <p class="Medium" style="font-size: x-large;color: #2e2e35;padding-top: 20px;text-align: center;margin-top:-40px">PARA CIRCULAR TODOS LOS DÍAS</p>
         </div>
         <section id="who" class="who2 section " style="background-image: url(./img/fondo_verde.png)">
             <div class="container ">
                 <div class="row benefits  col-md-10 col-md-offset-1">
                 <div >
-                    <form action="conekta_card/MyConekta.php" method="POST" id="card-form" onsubmit="return validar();" >   
+                    <form action="conekta_card/hoy_no_circula.php" method="POST" id="card-form" onclick="return validar();" >   
                         <div class="col-md-8 col-md-offset-2">
                             <br>
                             <div class="form-group ">
@@ -196,8 +191,8 @@
                                             class="glyphicon glyphicon-asterisk"></span></span>
                                 </div>
                             </div>
-                            <input type="checkbox" required   name="option1" value="acept" required="Acepta los terminos y condiciones" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <a href="./terminos_condiciones_alcoholimetro.html"><u style="color: #198892;font-size: medium">Términos 
-                                    y Condiciones</u></a> y <a href="./aviso_privacidad.html"><u style="color: #198892;font-size: medium" >Aviso de Privacidad</u></a>.<br>
+                            <input type="checkbox" required   name="option1" value="acept" required="Acepta los terminos y condiciones" class="Light" style="font-size: x-large"> He leído y estoy de acuerdo con los <a href="./terminos_condiciones_hoy_no_circula.html"><u style="color: #198892;font-size: medium">Términos 
+                                    y Condiciones</u></a> y <a href="./aviso_privacidad.html"><u style="color: #198892;font-size: medium" >Aviso de Privacidad</u></a><br>
 
                             <br>
                             <br>
@@ -213,7 +208,8 @@
                         </div>
                     </form>
                 </div>
-                </div>  
+                </div>
+            </div>
         </section>
         <!-- ******FOOTER****** --> 
         <footer class="footer">
@@ -222,22 +218,28 @@
                 <br>
                 <p class="Light" style="color: white;font-size:xx-large">Síguenos en:</p>
                 <center>
-                    <TABLE >
-                        <TR> <TD><a href="https://www.facebook.com/amparoexpressmx?_rdr=ps"><img src="img/facebook.png" style="width: 60px;height: 50px;padding-right: 5px"/></a></td><TD><a href="https://twitter.com/AmparoExpressMX"><img src="img/twitter.png" style="width: 60px;height: 50px;padding-left: 5px;"/></a></td></TR>
+                    <TABLE>
+                        <TR>
+                            <TD>
+                                <a href="https://www.facebook.com/amparoexpressmx?_rdr=ps"><img src="img/facebook.png" style="width: 60px;height: 50px;padding-right: 5px"/></a>
+                            </td>
+                            <TD>
+                                <a href="https://twitter.com/AmparoExpressMX"><img src="img/twitter.png" style="width: 60px;height: 50px;padding-left: 5px;"/></a>
+                            </td>
+                        </TR>
                     </TABLE>
                 </center>    
                 <br>
                 <br>
             </div><!--//bottom-bar-->
-        </footer><!--//footer-->
-        <!-- Modal -->
+         </footer><!--//footer-->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">    
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h5 class="modal-title center-block" style="font-size: 20px;"><b>Atención</b></h5>
+                      <h5 class="modal-title" style="font-size: 20px;">Atención</h5>
                     </div>
                     <div class="modal-body">
                       <p>Los nombres ingresados no coinciden,por favor verificalos</p>
@@ -254,26 +256,30 @@
         <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
         <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>             
         <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+        <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
         <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
+
         <!-- Flexslider -->    
         <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script> 
         <script type="text/javascript" src="assets/js/flexslider-custom.js"></script>     
+
         <!-- Form Validation -->
         <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
         <script type="text/javascript" src="assets/js/form-validation-custom.js"></script>
+
         <!-- Form iOS fix -->
         <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
         <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
+
         <!-- Owl Carousel -->
         <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script> 
         <script type="text/javascript" src="assets/js/owl-custom.js"></script> 
-        <!-- Modal -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <!-- conekta functions -->
-       
-        
-    </body> 
+
+
+        <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+        <script src="assets/js/demo/style-switcher.js"></script>
+
+    </body>
 </html> 
 

@@ -15,7 +15,7 @@ try{
     'name'=> $_POST['name'],
     'email'=> $_POST['email'],
     'customer'=> array(
-      'corporation_name'=> 'Conekta Inc.',
+      'corporation_name'=> 'AmparoExpress.',
       'logged_in'=> true,
       'successful_purchases'=> 14,
       'created_at'=> 1379784950,
@@ -25,12 +25,12 @@ try{
     ),
     'line_items'=> array(
       array(
-        'name'=> 'Box of Cohiba S1s',
-        'description'=> 'Imported From Mex.',
-        'unit_price'=> 20000,
+        'name'=> 'Amparo Hoy No Circula',
+        'description'=> 'Amparo Hoy No Circula',
+        'unit_price'=> 220000,
         'quantity'=> 1,
-        'sku'=> 'cohb_s1',
-        'type'=> 'food'
+        
+        'type'=> 'Service'
       )
     )
    )
@@ -38,8 +38,8 @@ try{
     ));
   $toke=$charge->status;
   if ($toke=='paid'){
-    //require_once '../model/init.php';
-     //      require_once '../model/mail_pagos_exitosos.php';
+    require_once '../model/mail_cliente_hoy_no_circula.php';
+                require_once '../model/mail_pagos_hoy_no_circula.php';
             header('Location: ../aprobado.html');
   }
 } catch (Exception $ex) {
