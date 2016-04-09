@@ -1,6 +1,6 @@
 
 <?php error_reporting(E_ALL);
-    // include("../model/conexion.php");
+    include("../model/conexion.php");
     date_default_timezone_set("america/mexico_city");
 
 

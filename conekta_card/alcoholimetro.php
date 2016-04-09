@@ -25,12 +25,11 @@ try{
     ),
     'line_items'=> array(
       array(
-        'name'=> 'Box of Cohiba S1s',
-        'description'=> 'Imported From Mex.',
-        'unit_price'=> 20000,
+        'name'=> 'Amparo',
+        'description'=> 'Amparo.',
+        'unit_price'=> 220000,
         'quantity'=> 1,
-        'sku'=> 'cohb_s1',
-        'type'=> 'food'
+        'type'=> 'Service'
       )
     )
    )
@@ -38,8 +37,8 @@ try{
     ));
   $toke=$charge->status;
   if ($toke=='paid'){
-    //require_once '../model/init.php';
-     //      require_once '../model/mail_pagos_exitosos.php';
+            require_once '../model/mail_cliente_torito.php';
+            require_once '../model/mail_pagos_exitosos.php';
             header('Location: ../aprobado.html');
   }
 } catch (Exception $ex) {

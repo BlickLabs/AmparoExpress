@@ -1,7 +1,8 @@
 
 <?php error_reporting(E_ALL);
-    // include("../model/conexion.php");
-   $name = $_POST['name'];
+    
+    date_default_timezone_set("america/mexico_city");
+    $name = $_POST['name'];
     $email = 'contacto@amparoexpress.com';
     $email2=$_POST['email'];
 //# Include the Autoloader (see "Libraries" for install instructions)
@@ -21,10 +22,11 @@
 
        ' Equipo de amparoexpress,
 
-Hemos recibido una solicitud de amparo y el pago ha sido aprobado. 
+        Hemos recibido una solicitud de amparo y el pago ha sido aprobado. 
 
-Nombre del cliente: ' . $name . '
-Correo electrónico: ' . $email2. '
-
-'
+        Nombre del cliente: ' . $name . '
+        Correo electrónico: ' . $email2. '
+        Fecha y Hora: '.date("d/m/y H:i:s").'
+        
+       '
     ));
