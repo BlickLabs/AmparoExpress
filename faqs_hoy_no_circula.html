@@ -219,22 +219,11 @@
 
         <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
         <script src="assets/js/demo/style-switcher.js"></script>
-        	<script type="text/javascript">
-		/*  Stellar for background scrolling  */
-		(function () {
-
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			 
-			} else {
-				$(window).stellar({
-					horizontalScrolling: false,
-					responsive: true
-				});
-			}
-
-		}());
-		/* End Stellar for background scrolling  */
-		</script>
+        <script>
+            $('[data-toggle=dropdown]').each(function() {
+            this.addEventListener('click', function() {}, false);
+            });
+        </script>	
     </body>
 </html> 
 

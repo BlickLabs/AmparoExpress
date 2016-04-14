@@ -279,23 +279,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
-        	<script type="text/javascript">
-		/*  Stellar for background scrolling  */
-		(function () {
-
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			 
-			} else {
-				$(window).stellar({
-					horizontalScrolling: false,
-					responsive: true
-				});
-			}
-
-		}());
-		/* End Stellar for background scrolling  */
-		</script>
-
+        	<script>
+            $('[data-toggle=dropdown]').each(function() {
+            this.addEventListener('click', function() {}, false);
+            });
+        </script>	
     </body>
 </html> 
 
